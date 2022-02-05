@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="/css/styes.css">
+    <script src="https://kit.fontawesome.com/e06293fdc6.js" crossorigin="anonymous"></script>
+    <title>Aspire | Apply</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div id="branding">
+                <img src="/img/cropped-Aspire-loans-logo.png" alt="aspire-logo.png">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Track</a></li>
+                    <li><a href="apply.html">Apply</a></li>
+                    <li><a href="index.html">Home</a></li>     
+                </ul>
+            </nav>
+        </div>
+        <p class="container">...get funding for your travels</p>
+    </header>
+    <section id="form">
+        <div class="form-container">
+            <!-- <h1>Complete the form and click on submit to apply</h1> -->
+            <h3>Complete the form and click on submit to apply</h3>
+            <p>****Please fill in all fields correctly****</p><br><br>
+            <form action="https://sheetdb.io/api/v1/x3jcldaancbep" method="POST" id="sheetdb-form" encType="multipart/form-data">
+                <label for="bvn">BVN : </label><br>
+                <input name="data[bvn]" type="number" size="20"><br><br>
+                <label for="gender">Gender : </label><br>
+                <select name="data[gender]" id="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                  </select><br><br>
+                <label for="fname">First name : </label><br>
+                <input name="data[fname]" type="text" size="20" required><br><br>
+                <label for="mname">Middle name : </label><br>
+                <input name="data[mname]" type="text" size="20" required><br><br>
+                <label for="lname">Last name : </label><br>
+                <input name="data[lname]" type="text" size="20"><br><br>
+                <label for="tel">Mobile number : </label><br>
+                <input name="data[tel]" type="tel" size="20"><br><br>
+                <label for="mmaiden">Mother's maiden name : </label><br>
+                <input name="data[mmaiden]" type="text" size="30"><br><br>
+                <label for="birth">Place of birth : </label><br>
+                <input name="data[birth]" type="text" size="30"><br><br>
+                <label for="nationality">Nationality : </label><br>
+                <input name="data[nationality]" type="text" size="30"><br><br>
+                <label for="state">State of origin : </label><br>
+                <input name=data[state] type="text" size="30"><br><br>
+                <label for="lga">Local Govt Area : </label><br>
+                <input name="data[lga]" type="text" size="30"><br><br>
+                <label for="htown">Home town : </label><br>
+                <input name="data[htown]" type="text" size="30"><br><br>
+                <label for="email">Email address : </label><br>
+                <input name="data[email]" type="email" size="30"><br><br>
+                <label for="residence">Residential address : </label><br>
+                <textarea name="data[residence]" id="residence" cols="30" rows="10"></textarea><br><br>
+                <label for="nokname">Next-of-kin name (full) : </label><br>
+                <input name="data[nokname]" type="text" size="30"><br><br>
+                <label for="nokaddress">Next-of-kin address : </label><br>
+                <textarea name="data[nokaddress]" id="nokaddress" cols="30" rows="10"></textarea><br><br>
+                <label for="nokphone">Next-of-kin phone number : </label><br>
+                <input name="data[nokphone]" type="tel" size="30"><br><br>
+                <label for="nokemail">Next-of-kin email : </label><br>
+                <input name="data[nokemail]" type="email" size="30"><br><br>
+                <label for="loan">Loan amount (N) : </label><br>
+                <input name="data[loan]" type="number" size="30"><br><br>
+                <label for="tenor">Tenor in weeks : </label><br>
+                <input name="data[tenor]" type="number" size="5"><br><br>
+                <label for="purpose">Purpose of travel: </label><br>
+                <select name="data[purpose]" id="purpose">
+                    <option value="poststudy">Postgraduate study</option>
+                    <option value="understudy">Undergraduate study</option>
+                    <option value="immigration">Immigration</option>
+                    <option value="vacation">Vacation</option>
+                  </select><br><br>
+                <label for="destination">Destination : </label><br>
+                <input name="data[destination]" type="text" size="30"><br><br>
+                <label for="school">Name of school (if for study) : </label><br>
+                <input name="data[school]" type="text" size="30"><br><br><br>
+                <u>Please fill if purpose of travel is for postgraduate study</u><br><br>
+                <label  for="undergrad">School finished from : </label><br>
+                <input name="data[undergrad]" type="text" size="30"><br><br>
+                <label for="course">Course of study : </label><br>
+                <input name="data[course]" type="text" size="30"><br><br><br>
+                <label for="refer">Were you referred by anyone? Please input referral code : </label><br>
+                <input name="data[refer]" type="number" size="3"><br><br><br>
+                <!-- <u>Upload International Passport and Utility Bill for house address (issued within the last three months)</u><br><br>
+                <input type="file" name="idcard" id="idcard"><br><br>
+                <input type="file" name="utility" id="utility"><br><br><br>
+                <u>Upload passport photograph</u><br><br> -->
+                <!-- <input type="file" name="pphoto" id="photo"><br><br><br> -->
+                <button type="submit" value="Send">Submit</button>
+            </form>
+            <p id="note">Please remember to send copies of your International Passport and Utility Bill for house address (issued within the last three months) to your referrer.</p>
+        </div>
+        
+    </section>
+    <!-- <footer>
+        <div id="contact">
+            <i class="fas fa-phone-square"></i>
+            <p>080-6284-8413</p>
+        </div>
+    </footer> -->
+    <script src="/js/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+        var form = document.getElementById('sheetdb-form');
+        form.addEventListener("submit", e => {
+          e.preventDefault();
+          fetch(form.action, {
+              method : "POST",
+              body: new FormData(document.getElementById("sheetdb-form")),
+          }).then(
+              response => response.json()
+          ).then((html) => {
+            // you can put any JS code here
+            alert('Form successfully submitted.')
+          });
+        });
+      </script>
+</body>
+</html>
